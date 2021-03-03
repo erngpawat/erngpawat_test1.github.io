@@ -10,10 +10,6 @@
 
 
 
-
-
-
-
 <style>
      * {
          font-family: 'Rubik', sans-serif;
@@ -66,24 +62,31 @@
     .photo img {
         height: 15rem;
         object-fit: cover;
-    }
-
-
-    .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        position: relative;
     }
 
+    .overlay {
+        opacity: 1;
+        transition: .5s ease;
+        }
+
+    .overlay:hover {
+        opacity: .8;
+    }
 
     .contact {
         margin: auto;
-        width: 20rem;
-        padding: 1rem;
+        width: 75%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        overflow: hidden;
         text-align: center;
         /*rounded corner*/
-        border-radius: 25rem;
+        border-radius: 3rem;
         background: #ffffff;
     }
 
@@ -98,6 +101,9 @@
     }
     .photo {
         width: 50%;
+    }
+    .contact {
+        width: 50%
     }
     } 
 </style>
@@ -115,23 +121,43 @@
     </div>
 
     <div class="photo">
-        <a href="https://google.com" target="_blank"><img src="images/IMG_0540.JPG" class="center"></a>
+        <a href="https://google.com" target="_blank">
+            <div class="overlay">
+                <img src="images/IMG_0540.JPG">
+            </div>
+        </a>
     </div>
 
     <div class="photo">
-        <a href="https://google.com" target="_blank"><img src="images/tt.jpg" class="center"></a>
+        <a href="https://google.com" target="_blank">
+              <div class="overlay"> 
+                <img src="images/tt.jpg">
+            </div> 
+        </a>
     </div>
 
     <div class="photo">
-        <a href="https://google.com" target="_blank"><img src="images/IMG_2386.JPG" class="center"></a>
+        <a href="https://google.com" target="_blank">
+            <div class="overlay">
+                <img src="images/IMG_2386.JPG">
+            </div>
+        </a>
     </div>
 
     <div class="photo">
-        <a href="https://google.com" target="_blank"><img src="images/IMG_0151.JPG" class="center"></a>
+        <a href="https://google.com" target="_blank">
+            <div class="overlay">
+                <img src="images/IMG_0151.JPG">
+            </div>
+        </a>
     </div>
 
     <div class="photo">
-        <a href="https://google.com" target="_blank"><img src="images/purduegate.jpg" class="center"></a>
+        <a href="https://google.com" target="_blank">
+            <div class="overlay">
+                <img src="images/purduegate.jpg">
+            </div>
+        </a>
     </div>
 
     <div class="full-block">
